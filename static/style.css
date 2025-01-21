@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.container {
+    height: 600px;
+    width: 1100px;
+    max-width: 1100px;
+    padding: 20px;
+    -webkit-backdrop-filter: blur(8px) saturate(200%);
+    backdrop-filter: blur(8px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.51); /* Add slight transparency */
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-left: 20px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.flex-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    text-align: justify;
+    margin-left: 20px;
+    width: 90%;
+    height: 400px;
+    margin-bottom: 15px;
+    padding: 20px;
+    border: 2px solid #767676;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    font-size: 16px;
+    color: black;
+    font-family: 'Poppins', serif;
+}
+
+button {
+    margin-left: 20px;
+    height: 50px;
+    width: 160px;
+    font-family: 'Poppins', serif;
+    background: #7c639f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+i{
+    margin-left: 2px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #6a489b;
+}
+
+button:hover i { 
+    margin-left: 10px; /* Move the icon slightly to the right */ 
+}
+
+.summary {
+    margin-right: 20px;
+    flex: 1;
+    padding: 20px;
+    margin-left: 20px;
+    border: 2px solid #767676;
+    background: rgba(249, 249, 249, 0.5); /* Add slight transparency */
+    border-radius: 10px;
+    overflow-y: auto;
+    max-height: 400px;
+    color: black;
+}
+
+.summary h4 {
+    margin-top: 5px;
+}
+
+p{
+    text-align: justify;
+    margin-top: -5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        
+        height: auto;
+        padding: 15px;
+    }
+    
+    textarea {
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.2);
+        width: auto;
+        width: 100%;
+        margin-left: 0;
+        color: black;
+    }
+    
+    button {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .summary {
+        padding: 10px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .flex-container {
+        flex-direction: column;
+    }
+    
+    textarea {
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.2);
+        width: auto;
+        height: 200px;
+        color: black;
+    }
+    
+    .summary {
+        padding: 10px;
+        max-height: 200px;
+    }
+}
