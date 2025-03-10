@@ -86,4 +86,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 For any questions or suggestions, please open an issue in the repository.
 
 ---
-Made with ❤️ by [Your Name]
+
